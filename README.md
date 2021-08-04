@@ -5,6 +5,6 @@ Job interview task
 1.  python3 -m venv django_env
 2. ...\django_env\Scripts\activate
 3.  pip install -r requirements.txt
-4.  python manage.py createsuperuser
+4.  python manage.py createsuperuser or use admin admin
 5.  python manage.py runserver
 6.  http://127.0.0.1:8000/plates
