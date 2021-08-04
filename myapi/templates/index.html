@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h2>Plates</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Plate</th>
+        <th>User</th>
+        <th>User_ID</th>
+        <th>Date_Added</th>
+      </tr>
+    </thead>
+    {% for plate in plates %}
+    <tbody>
+          <td>{{ plate.plate }}</td>
+          <td>{{ plate.user }}</td>
+          <td>{{ plate.user_id }}</td>
+          <td>{{ plate.date_added }}</td>
+        </tbody>
+        {% endfor %}
+  </table>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Search results by "{{query}}":</h1>
+  </br>
+  {% if plates %}
+  <ul>
+    {% for plate in plates %}
+      <li>
+        <a>{{ plate.plate }}</a> {{ plate.user }} {{plate.date_added}}
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>We found nothing.</p>
+  {% endif %}
+
+  {% endblock %}
