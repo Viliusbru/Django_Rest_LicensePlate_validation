@@ -1,0 +1,9 @@
+Task
+
+Create an app for standard Lithuanian state car numbers (XXX000 pattern) using django-rest-framework as the backend and selected frontend.
+
+Validation of entered numbers must be ensured, uniqueness must be ensured.
+
+It must be possible to create one by one, list all selected retrieve, edit, delete (standard CRUD) both through the frontend and through the backend (postman, or native django-rest gui).
+
+Standard authorization required.
